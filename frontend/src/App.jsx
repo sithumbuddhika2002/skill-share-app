@@ -26,6 +26,13 @@ function App() {
       <main className="container mx-auto px-4 py-8 flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/share-skills" element={<ShareSkills />} />
+          <Route path="/profile/:userId" element={<Profile />} />
+          <Route path="/post/:postId" element={<PostDetails />} />
+          <Route path="/subscriptions" element={<Subscriptions />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/learning-plan" element={<LearningPlan />} />
+          <Route path="/learning-plan/:id" element={<LearningPlanDetail />} />
         </Routes>
       </main>
       <Footer />
